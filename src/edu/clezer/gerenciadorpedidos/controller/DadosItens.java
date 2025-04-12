@@ -91,4 +91,12 @@ public class DadosItens {
         }
     }
     
+    public Double getValorUnitario(int codigoReferencia) {
+        for (Item item : itens) {
+            if (item.getIdItem() == codigoReferencia) {
+                return item.getValor();
+            }
+        }
+        return null; 
+    }
 }

@@ -4,8 +4,27 @@ import edu.clezer.gerenciadorpedidos.view.Interface;
 public class GerenciadorPedidos {
     public static void main(String[] args){
 
-        Cliente teste = new Cliente(1234567890, "Kawan", "99887766", "kakaw@email.com", "Cliente");
-        System.out.printf("Nome: %s %nTelefone: %s", teste.getNome(), teste.getTelefone());
+        Interface menu = new Interface();
+        int opcao = menu.menu();
 
+        switch (opcao) {
+            case 1:
+                menu.opcoesPedidos();
+                break;
+            case 2:
+                menu.opcoesClientes();
+                break;
+
+            case 3:
+                menu.opcoesItens();
+                break;
+
+            case 4:
+                System.out.println("Saindo...");
+                break;
+
+            default:
+                break;
+        }
     }
 }

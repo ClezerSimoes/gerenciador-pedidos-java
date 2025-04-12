@@ -1,5 +1,6 @@
 package edu.clezer.gerenciadorpedidos.view;
 
+import edu.clezer.gerenciadorpedidos.controller.*;
 import java.util.Scanner;
 
 public class Interface {
@@ -25,9 +26,10 @@ public class Interface {
         System.out.println("Selecione a opção desejada");
         System.out.println();
         System.out.println("1 - Visualizar pedios");
-        System.out.println("2 - Atualizar pedido");
-        System.out.println("3 - Deletar pedido");
-        System.out.println("4 - Voltar...");
+        System.out.println("2 - Cadastrar pedios");
+        System.out.println("3 - Atualizar pedido");
+        System.out.println("4 - Deletar pedido");
+        System.out.println("5 - Voltar...");
 
         int opcao = input.nextInt();
         return opcao;
@@ -39,9 +41,10 @@ public class Interface {
         System.out.println("Selecione a opção desejada");
         System.out.println();
         System.out.println("1 - Visualizar clientes");
-        System.out.println("2 - Atualizar cliente");
-        System.out.println("3 - Deletar clientes");
-        System.out.println("4 - Voltar...");
+        System.out.println("2 - Cadastrar clientes");
+        System.out.println("3 - Atualizar cliente");
+        System.out.println("4 - Deletar clientes");
+        System.out.println("5 - Voltar...");
 
         int opcao = input.nextInt();
         return opcao;
@@ -52,10 +55,11 @@ public class Interface {
         System.out.println();
         System.out.println("Selecione a opção desejada");
         System.out.println();
-        System.out.println("1 - Cadastrar item");
-        System.out.println("2 - Atualizar item");
-        System.out.println("3 - Deletar item");
-        System.out.println("4 - Voltar...");
+        System.out.println("1 - Visualizar item");
+        System.out.println("2 - Cadastrar item");
+        System.out.println("3 - Atualizar item");
+        System.out.println("4 - Deletar item");
+        System.out.println("5 - Voltar...");
 
         int opcao = input.nextInt();
         return opcao;

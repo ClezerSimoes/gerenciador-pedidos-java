@@ -1,5 +1,6 @@
 package edu.clezer.gerenciadorpedidos.controller;
 
+import edu.clezer.gerenciadorpedidos.model.item.Item;
 import edu.clezer.gerenciadorpedidos.model.pessoa.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -68,5 +69,14 @@ public class DadosUsuario {
 
     public void deletarUsuario(){
 
+    }
+
+    public String getNome(int codigoReferencia) {
+        for (Pessoa pessoa : usuarios) {
+            if (pessoa.getNumeroId() == codigoReferencia) {
+                return pessoa.getNome();
+            }
+        }
+        return null; 
     }
 }
