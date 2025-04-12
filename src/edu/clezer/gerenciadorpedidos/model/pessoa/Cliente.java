@@ -1,4 +1,4 @@
-package pessoa;
+package edu.clezer.gerenciadorpedidos.model.pessoa;
 
 public class Cliente extends Pessoa{
     

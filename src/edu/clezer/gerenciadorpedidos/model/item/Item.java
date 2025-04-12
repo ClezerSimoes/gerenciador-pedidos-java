@@ -1,4 +1,4 @@
-package item;
+package edu.clezer.gerenciadorpedidos.model.item;
 
 public class Item {
     private int idItem;

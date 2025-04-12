@@ -1,4 +1,4 @@
-import pessoa.Cliente;
+import edu.clezer.gerenciadorpedidos.model.pessoa.Cliente;
 
 public class GerenciadorPedidos {
     public static void main(String[] args){

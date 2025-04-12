@@ -1,4 +1,4 @@
-package pedido;
+package edu.clezer.gerenciadorpedidos.model.pedido;
 import java.sql.Date;
 
 

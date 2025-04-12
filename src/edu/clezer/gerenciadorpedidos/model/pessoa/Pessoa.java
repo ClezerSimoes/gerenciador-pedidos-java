@@ -1,4 +1,4 @@
-package pessoa;
+package edu.clezer.gerenciadorpedidos.model.pessoa;
 
 abstract class Pessoa {
     private int numeroId;
