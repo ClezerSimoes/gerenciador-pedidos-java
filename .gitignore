@@ -1,0 +1,8 @@
+# Ignorar pasta bin (arquivos compilados)
+bin/
+
+# Ignorar configurações do VS Code
+.vscode/
+
+# Ignorar arquivos de log
+*.log
