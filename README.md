@@ -1,18 +1,14 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Gerenciador de Pedidos - Java
 
-## Folder Structure
+Este é um projeto de estudo desenvolvido em Java. O objetivo é aprender e aplicar conceitos de programação e desenvolvimento de software.
 
-The workspace contains two folders by default, where:
+## Sobre
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Este projeto tem como finalidade gerenciar pedidos de um sistema simples, implementando funcionalidades básicas como cadastro de pedidos, clientes e produtos. É um projeto focado em aprendizado.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Tecnologias Utilizadas
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- Java
+- VS Code
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
