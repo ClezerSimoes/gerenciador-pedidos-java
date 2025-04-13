@@ -4,10 +4,18 @@ import edu.clezer.gerenciadorpedidos.controller.*;
 import java.util.Scanner;
 
 public class Interface {
-
+    private DadosUsuario dadosUsuario;
+    private DadosItens dadosItens;
+    private DadosPedidos dadosPedidos;
     Scanner input = new Scanner(System.in);
 
-    public int menu(){
+    public Interface(DadosUsuario dadosUsuario, DadosItens dadosItens, DadosPedidos dadosPedidos){
+        this.dadosUsuario = dadosUsuario;
+        this.dadosItens = dadosItens;
+        this. dadosPedidos = dadosPedidos;
+    }    
+
+    public int exibirMenu(){
         System.out.println();
         System.out.println("Gerenciador de Pedidos");
         System.out.println("Selecione a opção desejada");
@@ -18,10 +26,32 @@ public class Interface {
         System.out.println("4 - Sair...");
 
         int opcao = input.nextInt();
+
+        switch (opcao) {
+            case 1:
+                opcao = exibirOpcoesPedidos();
+                break;
+
+            case 2:
+                opcao = exibirOpcoesClientes();
+                break;
+
+            case 3:
+                opcao = exibirOpcoesItens();
+                break;
+
+            case 4:
+                System.out.println("Obrigado por utilizar o Gerenciador de Pedidos");
+                System.out.println("Saindo...");
+                break;
+        
+            default:
+                break;
+        }
         return opcao;
     }
     
-    public int opcoesPedidos(){
+    public int exibirOpcoesPedidos(){
         System.out.println();
         System.out.println("Selecione a opção desejada");
         System.out.println();
@@ -32,11 +62,33 @@ public class Interface {
         System.out.println("5 - Voltar...");
 
         int opcao = input.nextInt();
+
+        switch (opcao) {
+            case 1:
+                System.out.println("Pedido tal tal tal");
+                break;
+            case 2:
+                this.dadosPedidos.cadastrarPedido();
+                break;
+            case 3:
+                this.dadosPedidos.alterarPedido();
+                break;
+            case 4:
+                this.dadosPedidos.deletarPedido();
+                break;
+            case 5:
+                exibirMenu();
+                break;
+        
+            default:
+                break;
+        }
+
         return opcao;
 
     }
 
-    public int opcoesClientes(){
+    public int exibirOpcoesClientes(){
         System.out.println();
         System.out.println("Selecione a opção desejada");
         System.out.println();
@@ -47,11 +99,33 @@ public class Interface {
         System.out.println("5 - Voltar...");
 
         int opcao = input.nextInt();
+
+        switch (opcao) {
+            case 1:
+                System.out.println("Fulano de tal");
+                break;
+            case 2:
+                this.dadosUsuario.cadastrarUsuario();
+                break;
+            case 3:
+                this.dadosUsuario.atualizarUsuario();
+                break;
+            case 4:
+                this.dadosUsuario.deletarUsuario();
+                break;
+            case 5:
+                exibirMenu();
+                break;
+        
+            default:
+                break;
+        }
+
         return opcao;
 
     }
 
-    public int opcoesItens(){
+    public int exibirOpcoesItens(){
         System.out.println();
         System.out.println("Selecione a opção desejada");
         System.out.println();
@@ -62,6 +136,28 @@ public class Interface {
         System.out.println("5 - Voltar...");
 
         int opcao = input.nextInt();
+
+        switch (opcao) {
+            case 1:
+                
+                break;
+            case 2:
+                this.dadosItens.cadastrarItem();
+                exibirMenu();
+            case 3:
+                this.dadosItens.alterarItem();
+                break;
+            case 4:
+                this.dadosItens.deletarItem();
+                break;
+            case 5:
+                exibirMenu();
+                break;
+        
+            default:
+                break;
+        }
+
         return opcao;
 
     }

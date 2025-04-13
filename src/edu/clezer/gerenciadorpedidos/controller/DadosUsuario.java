@@ -1,6 +1,5 @@
 package edu.clezer.gerenciadorpedidos.controller;
 
-import edu.clezer.gerenciadorpedidos.model.item.Item;
 import edu.clezer.gerenciadorpedidos.model.pessoa.*;
 import java.util.ArrayList;
 import java.util.List;
